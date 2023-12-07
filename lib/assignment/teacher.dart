@@ -41,6 +41,8 @@ void main() {
       coursesTaught: ["Math", "English", "Bangla"]);
   jaber.displayRole();
 
+  print("\n------------------------\n");
+
   Person jahid = Teacher();
   jahid.displayRole();
 }

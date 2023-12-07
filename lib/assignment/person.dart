@@ -3,9 +3,9 @@ import 'package:module5/assignment/role.dart';
 class Person implements Role {
   @override
   String? roleOfPerson;
-  String? _name;
-  int? _age;
-  String? _address;
+  final String? _name;
+  final int? _age;
+  final String? _address;
 
   Person(this.roleOfPerson, this._age, this._name, this._address);
 

@@ -39,6 +39,8 @@ void main() {
   Person rakib = Student();
   rakib.displayRole();
 
+  print("\n------------------------\n");
+
   Person sakib = Student(name: "sakib", age: 25, address: "123 Main St",
       score: [90, 85, 82]);
 
