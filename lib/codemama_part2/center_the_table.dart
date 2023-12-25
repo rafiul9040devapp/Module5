@@ -16,10 +16,9 @@ void main() {
 }
 
 int? readScreenWidth(String userInput) {
-  int? screenWidth;
   if (userInput.isNotEmpty) {
     try {
-      return screenWidth = int.parse(userInput, radix: 10);
+      return  int.parse(userInput, radix: 10);
     } catch (e) {
       print('Invalid input. Please enter a valid integer.');
       return null;
