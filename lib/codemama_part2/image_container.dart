@@ -1,6 +1,7 @@
 import 'dart:io';
 
 void main() {
+  print('Enter the image width:');
   String? userInputImageWidth = stdin.readLineSync() ?? '';
   int? imageWidth = checkValidityOfInput(userInputImageWidth) ?? 0;
 
