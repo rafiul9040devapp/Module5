@@ -2,7 +2,7 @@ import 'dart:io';
 
 void main() {
   print('Enter The Product Price & Quantity: ');
-  String? userInput = stdin.readLineSync() ?? '';
+ String? userInput = stdin.readLineSync() ?? '';
   int totalInputCount = 2;
   List<int?> inputValues = readTheInput(userInput, totalInputCount);
 
@@ -49,7 +49,7 @@ bool isValid(int productID, int productPrice) {
 List<int?> readTheInput(String userInput, int totalInputCount) {
   if (userInput.isNotEmpty) {
     List<int?> values =
-        userInput.split('').map((value) => int.tryParse(value)).toList();
+        userInput.split(' ').map((value) => int.tryParse(value)).toList();
     return values.length == totalInputCount ? values : [];
   }
   return [];
